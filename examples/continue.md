@@ -1,9 +1,8 @@
 # Continue
 
-Continue can use an OpenAI-compatible gateway by configuring the OpenAI provider
-with an explicit `apiBase`.
+Continue 可以通过 OpenAI provider 接入 OpenAI-compatible gateway，关键是显式配置 `apiBase`。
 
-Example:
+示例：
 
 ```yaml
 models:
@@ -18,11 +17,10 @@ models:
       - apply
 ```
 
-Things to check:
+需要检查：
 
-1. Keep the `/v1` suffix on `apiBase`.
-2. Use the exact model ID shown by the gateway.
-3. Use a token with a small quota for long agent runs.
+1. `apiBase` 保留 `/v1` 后缀。
+2. 使用中转站模型市场展示的精确模型 ID。
+3. 长任务先使用小额度 token。
 
-If a request fails, compare the gateway log with a direct curl request using the
-same base URL, key, and model.
+如果请求失败，用相同 base URL、key、model 跑一次 curl，再和中转站请求日志对比。

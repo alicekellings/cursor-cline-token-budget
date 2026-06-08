@@ -1,13 +1,7 @@
-# Disclosure
+# 透明说明
 
-This guide is maintained by the team behind **Wappkit**
-(<https://api.wappkit.com>), an OpenAI-compatible API gateway. The examples use
-Wappkit as the endpoint because that's what we run.
+这个指南由 **Wappkit** 团队维护。Wappkit 地址是 <https://api.wappkit.com>，它是一个 OpenAI-compatible API gateway。示例里使用 Wappkit 作为 endpoint，是因为这是我们自己的服务。
 
-The techniques here - capping a token's quota and reading the `usage` field - are
-standard OpenAI-compatible / New API features and work the same on other
-gateways. If you prefer a different provider, change the base URL and key and the
-rest of the guide still applies.
+这里讲的方法，比如给 token 设置额度、读取 `usage` 字段，属于 OpenAI-compatible / New API 常见能力，也适用于其他兼容服务。如果你使用其他服务商，替换 base URL 和 key 后，其余思路仍然成立。
 
-We don't claim Wappkit is the cheapest or the most reliable option. Compare
-pricing and test against your own workload before committing.
+我们不声称 Wappkit 一定是最便宜或最稳定的选择。正式使用前，请比较价格，并用自己的真实工作负载测试。

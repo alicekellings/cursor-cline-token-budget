@@ -1,20 +1,16 @@
 # Cursor
 
-Cursor can route requests to any OpenAI-compatible endpoint (BYOK).
+Cursor 可以通过 BYOK 方式把请求转到 OpenAI-compatible endpoint。
 
-1. **Settings > Models.**
-2. Put your API key in the **OpenAI API Key** field.
-3. Enable **Override OpenAI Base URL** and set it to:
+1. 打开 **Settings > Models**。
+2. 在 **OpenAI API Key** 中填入你的 API key。
+3. 开启 **Override OpenAI Base URL**，并设置为：
    - `https://api.wappkit.com/v1`
-4. Add the model name(s) you want as custom models - use the exact names shown in
-   the gateway's model marketplace (e.g. `gpt-5.5`).
-5. Save and send a test message.
+4. 添加需要使用的自定义模型名，模型名要和中转站模型市场展示的名称一致，例如 `gpt-5.5`。
+5. 保存后发送一条测试消息。
 
-Notes:
+注意：
 
-- Cursor's settings UI shifts between versions; the three things you're looking
-  for are the **API key**, the **base URL override**, and a **custom model name**.
-- Some Cursor features (Tab, certain agent modes) only run on Cursor's own
-  backend and ignore a custom base URL. Chat and the model picker honor it.
-- To cap spend, point Cursor at a token that has a quota set on it (see the
-  [README](../README.md)).
+- Cursor 设置界面不同版本会变化，但你要找的核心配置是 **API key**、**base URL override** 和 **custom model name**。
+- Cursor 的部分能力，例如 Tab 或某些 agent 模式，可能只走 Cursor 自己的后端，不一定使用自定义 base URL。Chat 和模型选择器通常会使用你的配置。
+- 想控制成本，就给 Cursor 单独创建一个带额度的 token，具体见 [README](../README.md)。

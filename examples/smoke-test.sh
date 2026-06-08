@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Smoke test for an OpenAI-compatible gateway.
-# Checks: connectivity, per-call `usage`, and whether reasoning_content is passed through.
+# OpenAI-compatible gateway 冒烟测试。
+# 检查：连通性、单次请求 usage，以及是否透传 reasoning_content。
 #
-# Usage:
+# 用法：
 #   BASE_URL=https://api.wappkit.com/v1 TOKEN=sk-xxx MODEL=gpt-5.5 ./smoke-test.sh
 #
-# Needs: curl, jq
+# 依赖：curl, jq
 
 set -euo pipefail
 
